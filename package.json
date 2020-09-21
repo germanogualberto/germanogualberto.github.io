@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "ngh:build": "ng build --prod --base-href https://germanogualberto.github.io/",
+    "ngh:deploy": "ngh --branch=master"
   },
   "private": true,
   "dependencies": {
