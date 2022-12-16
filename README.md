@@ -1,5 +1,5 @@
 <h1 align="center">
-    <b>GermanoGualberto</b>
+    <strong>Germano Gualberto</strong>
 </h1>
 
 ## 💻 Aplicação
@@ -8,15 +8,16 @@ Foi desenvolvida como site e portfolio pessoal utilizando as tecnologias listada
 
 O site contém:
 
-* Formação
-* Descrição
+* Apresentação
 * Portfólio
-* Curriculum
-* Links de Redes Sociais
+* Skills
+* Contato
 
 ## 🚀 Tecnologias
 
-* Angular 9
+* HTML
+* CS
+* JavaScript
 
 
 ## 📝 Licença
