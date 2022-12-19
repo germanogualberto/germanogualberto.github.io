@@ -6,11 +6,17 @@
     --dark:#1e1c2a;
     --blue:#1a58b6;
     --light-blue:#a8c8ee;
+    --grey:  rgb(94, 93, 93);
+    --light-grey:  rgb(175, 174, 174)
+}
+
+a{
+    text-decoration: none;
 }
 
 .row{
     
-    padding: 5%;
+    padding: 5% 5% 5%;
     font-family: 'Poppins', sans-serif;
     border-bottom: 3px solid var(--dark);
     box-shadow: 0 0.4rem 0.8rem #ccc;
@@ -18,12 +24,20 @@
     height: 700px;
     align-items: center;
     transition: all 0.5s;
+    border-radius: 2%;
     
 }
 
 .title{
-    
-    align-content: center;
+    padding:15%
+}
+
+i{
+    bottom: 0px;
+}
+
+i:hover{
+    transform: scale(2 , 2);
 }
 
 body{
@@ -33,13 +47,33 @@ body{
 
 .project{
     padding:2%;
-    box-shadow: 0 0.2rem 0.5rem rgb(175, 174, 174);
+    box-shadow: 0 0.4rem 0.5rem var(--light-grey) ;
     width: fit-content;
     height: fit-content;
     background: var(--white);
     border-radius: 5%;
 }
 
+
 .project:hover{
-    box-shadow: 0 0.1rem 0.5rem rgb(94, 93, 93);
+    box-shadow: 0 0.9rem 0.5rem var(--grey);
+    font-weight: bolder;
+    transition: all 0.5s;
+}
+
+h2:hover{
+    font-weight: bolder;
+}
+
+a:hover{
+    font-weight: bolder;
+    transition: all 0.2s;
+}
+
+.icon-social-network{
+    width: 40%;
+}
+
+.icon-skill{
+    width: 15%;
 }
