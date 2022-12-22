@@ -1,79 +1,197 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-:root{
-    --red:#d63a25;
-    --white:#fff;
-    --dark:#1e1c2a;
-    --blue:#1a58b6;
-    --light-blue:#a8c8ee;
-    --grey:  rgb(94, 93, 93);
-    --light-grey:  rgb(175, 174, 174)
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+:root {
+  --red: #d63a25;
+  --white: #fff;
+  --dark: #1e1c2a;
+  --blue: #1a58b6;
+  --light-blue: #a8c8ee;
+  --grey: rgb(94, 93, 93);
+  --light-grey: rgb(175, 174, 174);
 }
 
-a{
-    text-decoration: none;
+body {
+  background: var(--blue);
+  font-family: "Poppins", sans-serif;
+  outline: none;
 }
 
-.row{
-    
-    padding: 5% 5% 5%;
-    font-family: 'Poppins', sans-serif;
-    border-bottom: 3px solid var(--dark);
-    box-shadow: 0 0.4rem 0.8rem #ccc;
-    background: var(--light-blue);
-    height: 700px;
-    align-items: center;
-    transition: all 0.5s;
-    border-radius: 2%;
-    
+a {
+  text-decoration: none;
 }
 
-.title{
-    padding:15%
+a:hover {
+  font-weight: bolder;
+  transition: all 0.2s;
 }
 
-i{
-    bottom: 0px;
+i {
+  bottom: 0px;
 }
 
-i:hover{
-    transform: scale(2 , 2);
+i:hover {
+  transform: scale(2, 2);
 }
 
-body{
-    color: var(--dark);
-    background: var(--blue);
+h1 {
+  font-size: 5vh;
 }
 
-.project{
-    padding:2%;
-    box-shadow: 0 0.4rem 0.5rem var(--light-grey) ;
-    width: fit-content;
-    height: fit-content;
-    background: var(--white);
-    border-radius: 5%;
+h1:hover * {
+  font-weight: bolder;
+  transition: all 0.2s;
+  color: var(--white);
 }
 
-
-.project:hover{
-    box-shadow: 0 0.9rem 0.5rem var(--grey);
-    font-weight: bolder;
-    transition: all 0.5s;
+h2 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  top: 0;
+  font-size: 10vh;
 }
 
-h2:hover{
-    font-weight: bolder;
+h2:hover {
+  font-weight: bolder;
 }
 
-a:hover{
-    font-weight: bolder;
-    transition: all 0.2s;
+p {
+  font-size: 2vh;
 }
 
-.icon-social-network{
-    width: 40%;
+footer {
+  margin-top: 10px;
+  height: 5vh;
+  background-color: var(--white);
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
-.icon-skill{
-    width: 15%;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section_1 {
+  color: var(--white);
+  height: 100vh;
+  width: 80vw;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  border-radius: 2%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section_1 * {
+  color: var(--white);
+}
+
+.section_2 {
+  box-shadow: 0 0.4rem 0.8rem #ccc;
+  background-color: var(--light-blue);
+  height: 100vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  border-radius: 2%;
+}
+
+.section_2 p {
+  text-indent: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.projects {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  padding: 2%;
+
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--white);
+  border-radius: 5%;
+  color: var(--dark);
+  border: none;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.project * {
+  color: var(--dark);
+  outline: none;
+}
+
+.project:hover * {
+  font-weight: bolder;
+  transition: all 0.5s;
+  color: var(--dark);
+}
+
+.project a {
+  text-decoration: underline;
+}
+
+.icon-social-network {
+  width: 70%;
+}
+
+.icon-skill {
+  width: 15%;
+}
+
+.action-icon-up {
+  top: 0;
+}
+
+.action-icon-down {
+  bottom: 0;
+  position: relative;
+}
+
+.social-networks {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-network {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 600px) {
+  .icon-skill {
+    width: 30%;
+  }
+
+  .icon-social-network {
+    width: 30%;
+  }
+
+  .social-networks {
+    flex-direction: column;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
 }
