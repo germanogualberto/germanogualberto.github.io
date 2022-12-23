@@ -73,6 +73,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: -10;
 }
 
 .section_1 {
@@ -111,12 +112,28 @@ footer {
   margin-right: 2%;
 }
 
-.projects {
-  display: flex;
-  width: fit-content;
-  justify-content: center;
-  align-items: center;
+#projects.section_2  h2 {
+    z-index: 5;
+    position: absolute;
 }
+
+.working-late-animate {
+    height: 90vh;
+    z-index: -1;
+    display:block;
+    position: absolute;
+    
+}
+
+#projects.section_2.projects {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    position: absolute;
+      
+  }
 
 .project {
   padding: 2%;
@@ -178,6 +195,8 @@ footer {
   margin-bottom: 5%;
 }
 
+
+
 @media screen and (max-width: 600px) {
   .icon-skill {
     width: 30%;
@@ -195,3 +214,21 @@ footer {
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 600px) {
+    .icon-skill {
+      width: 30%;
+    }
+  
+    .icon-social-network {
+      width: 30%;
+    }
+  
+    .social-networks {
+      flex-direction: column;
+    }
+  
+    .projects {
+      flex-direction: column;
+    }
+  }
