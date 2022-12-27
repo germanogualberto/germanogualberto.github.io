@@ -1,13 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 :root {
-  --red: #d63a25;
   --white: #fff;
   --dark: #1e1c2a;
   --blue: #1a58b6;
   --light-blue: #a8c8ee;
-  --grey: rgb(94, 93, 93);
-  --light-grey: rgb(175, 174, 174);
 }
 
 body {
@@ -15,25 +12,24 @@ body {
   font-family: "Poppins", sans-serif;
   outline: none;
   color: var(--dark);
+  z-index: -10;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
   text-decoration: none;
-  color: var(--dark);
+  
+  color: var(--white);
 }
 
 a:hover {
   font-weight: bolder;
   color: var(--dark);
   transition: all 0.2s;
-}
-
-i {
-  bottom: 0px;
-}
-
-i:hover {
-  transform: scale(2, 2);
 }
 
 h1 {
@@ -47,124 +43,84 @@ h1:hover * {
   color: var(--white);
 }
 
+h1 *{
+  color: var(--white);
+}
+
 h2 {
-  display: flex;
   align-content: center;
-  justify-content: center;
-  top: 0;
   font-size: 10vh;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 4vh;
+  font-weight: bold;
 }
 
 p {
   font-size: 2vh;
+  text-indent: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 footer {
-  color: black;
-  height: fit-content;
   background-image: linear-gradient( var(--blue), var(--white) );
   width: 100vw;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.main {
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: -10;
+  justify-content: center; 
 }
 
-.section_1 {
-  color: var(--white);
+footer a {
+  color: var(--dark)
+}
+
+.section{
   height: 100vh;
   width: 80vw;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: all 0.5s;
   border-radius: 2%;
   margin: 5px;
-  display: flex;
-  flex-direction: column;
-}
+  box-shadow: none;
 
-.section_1 * {
-  color: var(--white);
-}
-
-.section_2 {
-  box-shadow: 0 0.4rem 0.8rem #ccc;
-  background-color: var(--light-blue);
-  height: 100vh;
-  width: 80vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s;
-  border-radius: 2%;
-}
-
-.section_2 p {
-  text-indent: 5%;
-  margin-left: 2%;
-  margin-right: 2%;
 }
 
 #intro {
   background-image: linear-gradient(var(--blue),var(--light-blue));
 }
 
-#intro h3{
-  font-size: 4vh;
-  color: var(--dark);
-  font-weight: bold;
-}
-
 #intro h2{
   font-size: 3vh;
-  color: var(--dark);
-  font-weight: bold;
-}
-
-#about a {
-  color: var(--dark);
-  text-decoration: underline;
 }
 
 #about {
   background-image: linear-gradient(var(--light-blue),var(--blue));
-  box-shadow: none;
   font-size: 10%;
 }
 
-#about.action-icon-up {
-  font-size: 50%;
+#projects {
+    z-index: 5;
 }
 
 #projects h2 {
-    z-index: 5;
-    color: var(--dark);
+  -webkit-text-stroke-width: thin;
+  -webkit-text-stroke-color: var(--white);
 }
-
-#projects a{
-  color: var(--dark)
-}
-
-
 
 #projects.projects {
-  
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 5;
-    position: absolute;
-    
-      
-  }
+    position: absolute;      
+}
 
 .project {
   padding: 2%;
@@ -178,19 +134,14 @@ footer {
   margin-bottom: 10%;
 }
 
-.project * {
+.project a {
   color: var(--dark);
-  outline: none;
+  text-decoration: underline;
 }
 
 .project:hover * {
   font-weight: bolder;
   transition: all 0.5s;
-  color: var(--dark);
-}
-
-.project a {
-  text-decoration: underline;
 }
 
 .working-late-animate {
@@ -198,12 +149,10 @@ footer {
   z-index: -1;
   display:block;
   position: absolute;
-  
 }
 
 #skills {
   background-image: linear-gradient(var(--blue),var(--light-blue),var(--blue));
-  box-shadow: none;
 }
 
 .icon-social-network {
@@ -221,6 +170,10 @@ footer {
 .action-icon-down {
   bottom: 0;
   position: relative;
+}
+
+#contact-info {
+  color: var(--white);
 }
 
 .social-networks {
