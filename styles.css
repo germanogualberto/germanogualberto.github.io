@@ -14,14 +14,17 @@ body {
   background: var(--blue);
   font-family: "Poppins", sans-serif;
   outline: none;
+  color: var(--dark);
 }
 
 a {
   text-decoration: none;
+  color: var(--dark);
 }
 
 a:hover {
   font-weight: bolder;
+  color: var(--dark);
   transition: all 0.2s;
 }
 
@@ -35,6 +38,7 @@ i:hover {
 
 h1 {
   font-size: 5vh;
+  padding: 2%
 }
 
 h1:hover * {
@@ -51,22 +55,19 @@ h2 {
   font-size: 10vh;
 }
 
-h2:hover {
-  font-weight: bolder;
-}
-
 p {
   font-size: 2vh;
 }
 
 footer {
-  margin-top: 10px;
-  height: 5vh;
-  background-color: var(--white);
+  color: black;
+  height: fit-content;
+  background-image: linear-gradient( var(--blue), var(--white) );
   width: 100vw;
   align-items: center;
   justify-content: center;
   display: flex;
+  flex-direction: column;
 }
 
 .main {
@@ -112,38 +113,67 @@ footer {
   margin-right: 2%;
 }
 
-#projects.section_2  h2 {
+#intro {
+  background-image: linear-gradient(var(--blue),var(--light-blue));
+}
+
+#intro h3{
+  font-size: 4vh;
+  color: var(--dark);
+  font-weight: bold;
+}
+
+#intro h2{
+  font-size: 3vh;
+  color: var(--dark);
+  font-weight: bold;
+}
+
+#about a {
+  color: var(--dark);
+  text-decoration: underline;
+}
+
+#about {
+  background-image: linear-gradient(var(--light-blue),var(--blue));
+  box-shadow: none;
+  font-size: 10%;
+}
+
+#about.action-icon-up {
+  font-size: 50%;
+}
+
+#projects h2 {
     z-index: 5;
-    position: absolute;
+    color: var(--dark);
 }
 
-.working-late-animate {
-    height: 90vh;
-    z-index: -1;
-    display:block;
-    position: absolute;
-    
+#projects a{
+  color: var(--dark)
 }
 
-#projects.section_2.projects {
+
+
+#projects.projects {
   
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 5;
     position: absolute;
+    
       
   }
 
 .project {
   padding: 2%;
-
   width: fit-content;
   height: fit-content;
   background-color: var(--white);
   border-radius: 5%;
   color: var(--dark);
-  border: none;
+  border-style: dashed;
   margin-left: 10%;
   margin-bottom: 10%;
 }
@@ -161,6 +191,19 @@ footer {
 
 .project a {
   text-decoration: underline;
+}
+
+.working-late-animate {
+  height: 90vh;
+  z-index: -1;
+  display:block;
+  position: absolute;
+  
+}
+
+#skills {
+  background-image: linear-gradient(var(--blue),var(--light-blue),var(--blue));
+  box-shadow: none;
 }
 
 .icon-social-network {
@@ -197,10 +240,8 @@ footer {
 
 
 
-@media screen and (max-width: 600px) {
-  .icon-skill {
-    width: 30%;
-  }
+@media only screen and (max-width: 600px) {
+  
 
   .icon-social-network {
     width: 30%;
@@ -213,22 +254,24 @@ footer {
   .projects {
     flex-direction: column;
   }
-}
 
-@media screen and (max-width: 600px) {
-    .icon-skill {
-      width: 30%;
-    }
-  
-    .icon-social-network {
-      width: 30%;
-    }
-  
-    .social-networks {
-      flex-direction: column;
-    }
-  
-    .projects {
-      flex-direction: column;
-    }
+  #projects h2 {
+    font-size: 40px;
   }
+
+  #about h2 {
+    display: none;
+  }
+
+  #about p {
+    font-size: 1.7vh;
+  }
+
+  #contact-info h2{
+    font-size: 30px;
+  }
+
+  .icon-skill {
+    width: 30%;
+  }
+}
