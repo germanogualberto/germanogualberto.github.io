@@ -22,8 +22,8 @@ body {
 
 a {
   text-decoration: none;
-  
   color: var(--white);
+  
 }
 
 a:hover {
@@ -195,6 +195,17 @@ footer a {
 
 @media only screen and (max-width: 600px) {
   
+  #intro {
+    padding:2%;
+  }
+
+  #intro h1 {
+    font-size: 7vh;
+  }
+
+  #intro h2 {
+    font-size: 7vh;
+  }
 
   .icon-social-network {
     width: 30%;
